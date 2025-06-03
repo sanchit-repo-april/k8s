@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ngipod
+  labels:
+    app: ngi
+spec:
+  containers:
+  - name: ngicontainer
+    image: nginx
+    ports:
+      - containerPort: 80
